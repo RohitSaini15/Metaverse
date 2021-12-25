@@ -14,11 +14,13 @@ function Header() {
       </div>
 
       <div className="col-span-4 text-left lg:text-center">
-        <div className="relative h-48 w-48 lg:mx-auto border-pink-500 border-8 rounded-full">
+        <div className="relative h-24 w-24 sm:h-48 sm:w-48 lg:mx-auto border-pink-500 border-4 sm:border-8 rounded-full">
           <Avatar logoutOnPress />
         </div>
-        <h1 className="text-3xl">Welcome to the Metaverse</h1>
-        <h2 className="text-5xl font-bold truncate">{user.getUsername()}</h2>
+        <h1 className="hidden sm:text-3xl">Welcome to the Metaverse</h1>
+        <h2 className="ml-4 sm:m-0 text-[10px] sm:text-5xl font-bold truncate">
+          {user.getUsername()}
+        </h2>
         <ChangeUsername />
       </div>
     </div>

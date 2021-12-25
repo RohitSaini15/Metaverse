@@ -27,7 +27,7 @@ function SendMessage({ endOfMessagesRef }) {
   return (
     <form className="flex w-11/12 px-6 py-5 max-w-2xl shadow-xl rounded-full border-4 border-blue-400 fixed bottom-10 bg-black opacity-80">
       <input
-        className="flex-grow outline-none bg-transparent text-white placeholder-gray-500"
+        className="mr-5 flex-grow outline-none bg-transparent text-white placeholder-gray-500"
         type="text"
         placeholder={"Enter a message " + user.getUsername() + "..."}
         ref={message}
